@@ -1,0 +1,46 @@
+{% extends "base.html" %} {% block content %}
+<div class="dashboard-container">
+  <h2>Личный кабинет</h2>
+  <div class="user-info">
+    <p>Добро пожаловать, <strong>{{ session.username }}</strong>!</p>
+  </div>
+
+  <div class="purchased-templates">
+    <h3>Купленные шаблоны</h3>
+    {% if templates %}
+    <div class="templates-list">
+      {% for template in templates %}
+      <div class="template-item">
+        <h4>{{ template.name }}</h4>
+        <p>Куплен: {{ template.purchase_date }}</p>
+        <button
+          class="btn-primary"
+          onclick="downloadTemplate({ template,id })"
+        >
+          Скачать
+        </button>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p>У вас пока нет купленных шаблонов.</p>
+    {% endif %}
+  </div>
+
+  <a href="{{ url_for('logout') }}" class="btn-secondary">Выйти</a>
+</div>
+
+<script>
+  function downloadTemplate(templateId) {
+    fetch(`/download/${templateId}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          alert(data.message);
+        } else {
+          alert("Ошибка: " + data.message);
+        }
+      });
+  }
+</script>
+{% endblock %}

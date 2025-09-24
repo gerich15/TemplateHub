@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TemplateHub - Премиальные шаблоны</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav-brand">
+          <h2>TemplateHub</h2>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home">Главная</a></li>
+          <li><a href="#templates">Шаблоны</a></li>
+          <li><a href="#cards">Заказ карт</a></li>
+          <li><a href="#about">О нас</a></li>
+          <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn-login" id="loginBtn">Вход</button>
+          <button class="btn-register" id="registerBtn">Регистрация</button>
+          <div class="theme-toggle">
+            <i class="fas fa-moon" id="themeIcon"></i>
+          </div>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1 class="hero-title">Премиальные шаблоны для вашего бизнеса</h1>
+        <p class="hero-subtitle">
+          Создайте уникальное присутствие в интернете с нашими эксклюзивными
+          шаблонами, разработанными ведущими дизайнерами.
+        </p>
+        <div class="hero-actions">
+          <button class="btn-primary" id="exploreBtn">
+            Исследовать шаблоны
+          </button>
+          <button class="btn-secondary">Заказать карту</button>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="template-preview">
+          <div class="template-header">
+            <div class="template-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="template-content">
+            <div class="template-element animated"></div>
+            <div class="template-element animated delay-1"></div>
+            <div class="template-element animated delay-2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates-section" id="templates">
+      <div class="container">
+        <h2 class="section-title">Наши шаблоны</h2>
+        <div class="search-bar">
+          <input type="text" id="searchInput" placeholder="Поиск шаблонов..." />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="templates-grid" id="templatesGrid">
+          <!-- Templates will be loaded here by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section" id="cards">
+      <div class="container">
+        <h2 class="section-title">Заказ карт</h2>
+        <p class="section-subtitle">
+          Персонализируйте свои карты с нашими премиальными дизайнами
+        </p>
+        <div class="cards-grid">
+          <div class="card-item">
+            <div class="card-preview">
+              <div class="card-design premium"></div>
+            </div>
+            <h3>Премиум карта</h3>
+            <p>Элегантный дизайн с золотым тиснением</p>
+            <button class="btn-primary">Заказать</button>
+          </div>
+          <div class="card-item">
+            <div class="card-preview">
+              <div class="card-design business"></div>
+            </div>
+            <h3>Бизнес карта</h3>
+            <p>Современный дизайн для профессионалов</p>
+            <button class="btn-primary">Заказать</button>
+          </div>
+          <div class="card-item">
+            <div class="card-preview">
+              <div class="card-design minimalist"></div>
+            </div>
+            <h3>Минималистичная карта</h3>
+            <p>Чистый и стильный дизайн</p>
+            <button class="btn-primary">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <h2 class="section-title">О нас</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>
+              TemplateHub - это компания, которая специализируется на создании
+              эксклюзивных шаблонов и дизайнерских решений для бизнеса. Наша
+              команда состоит из опытных дизайнеров и разработчиков, которые
+              стремятся предоставить нашим клиентам продукты высочайшего
+              качества.
+            </p>
+            <p>
+              Мы гордимся тем, что каждый наш шаблон тщательно проработан,
+              оптимизирован для различных устройств и соответствует современным
+              тенденциям веб-дизайна. Наша цель - помочь нашим клиентам создать
+              уникальное и запоминающееся присутствие в интернете.
+            </p>
+            <p>
+              С TemplateElite вы получаете не просто шаблон, а готовое решение
+              для успешного запуска вашего проекта. Мы сопровождаем наших
+              клиентов на всех этапах, предоставляя техническую поддержку и
+              консультации.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <h3>500+</h3>
+              <p>Успешных проектов</p>
+            </div>
+            <div class="stat">
+              <h3>98%</h3>
+              <p>Довольных клиентов</p>
+            </div>
+            <div class="stat">
+              <h3>5 лет</h3>
+              <p>Опыта на рынке</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Свяжитесь с нами</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email</h3>
+                <p>info@templateelite.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h3>Телефон</h3>
+                <p>+7 (999) 123-45-67</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Адрес</h3>
+                <p>Москва, ул. Тверская, д. 10</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="email" placeholder="Ваш email" required />
+            <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+            <button type="submit" class="btn-primary">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <h3>TemplateElite</h3>
+            <p>Премиальные шаблоны для вашего бизнеса</p>
+          </div>
+          <div class="footer-links">
+            <h4>Быстрые ссылки</h4>
+            <ul>
+              <li><a href="#home">Главная</a></li>
+              <li><a href="#templates">Шаблоны</a></li>
+              <li><a href="#cards">Заказ карт</a></li>
+              <li><a href="#about">О нас</a></li>
+            </ul>
+          </div>
+          <div class="footer-social">
+            <h4>Мы в соцсетях</h4>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-vk"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 TemplateElite. Все права защищены.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Вход в аккаунт</h2>
+        <form id="loginForm">
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Пароль" required />
+          <button type="submit" class="btn-primary">Войти</button>
+        </form>
+        <p>
+          Нет аккаунта? <a href="#" id="switchToRegister">Зарегистрироваться</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Регистрация</h2>
+        <form id="registerForm">
+          <input type="text" placeholder="Имя" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Пароль" required />
+          <button type="submit" class="btn-primary">Зарегистрироваться</button>
+        </form>
+        <p>Уже есть аккаунт? <a href="#" id="switchToLogin">Войти</a></p>
+      </div>
+    </div>
+
+    <!-- Purchase Modal -->
+    <div class="modal" id="purchaseModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Оформление заказа</h2>
+        <div id="purchaseContent">
+          <form id="customerForm">
+            <input type="text" placeholder="Ваше имя" required />
+            <input type="email" placeholder="Ваш email" required />
+            <button type="button" class="btn-primary" id="proceedToPayment">
+              Перейти к оплате
+            </button>
+          </form>
+          <div id="paymentContent" style="display: none">
+            <h3>Оплата по QR-коду</h3>
+            <div id="qrCodeContainer">
+              <!-- QR код будет сгенерирован здесь -->
+            </div>
+            <p>Отсканируйте QR-код для оплаты</p>
+            <button class="btn-primary" id="confirmPayment">Я оплатил</button>
+          </div>
+          <div id="downloadContent" style="display: none">
+            <h3>Оплата подтверждена!</h3>
+            <p>Спасибо за покупку. Ваш шаблон готов к скачиванию.</p>
+            <button class="btn-primary" id="downloadTemplate">
+              Скачать шаблон
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+  </body>
+</html>
